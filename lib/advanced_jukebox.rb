@@ -24,7 +24,7 @@ def list(my_songs)
   my_songs.keys.each_with_index { |song, i| puts "#{i+1}. #{song}" }
 end
 
-def play(my_songs)
+def play(my_songs) #works
   #this method is slightly different!
   #you should still ask the user for input and collect their song choice
   #this time, only allow user's to input a song name
@@ -46,7 +46,7 @@ def exit_jukebox #works
   puts "Goodbye"
 end
 
-def run(songs)  #works
+def run(my_ongs)  #did not open song but it tried to
   user_response = ""
   help
   while user_response
